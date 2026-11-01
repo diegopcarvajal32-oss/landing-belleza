@@ -804,13 +804,13 @@ fbq('track','PageView');
 <span class="text-xs font-bold uppercase tracking-wider text-rose-200 border border-white/20 bg-white/10 px-4 py-1.5 rounded-full inline-block mb-3">
       Oferta de Precio relámpago
     </span>
-<h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-8 text-white px-2 leading-tight">Lo que un diseñador cobra entre 600.000 y 1.000.000 de pesos lo tendrás en la palma de tu mano por menos de 25.000 pesos</h2>
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-8 text-white px-2 leading-tight">Lo que un diseñador cobra entre 600.000 y 1.000.000 de pesos lo tendrás en la palma de tu mano por menos de 35.000 pesos</h2>
 <!-- Scarcity Bar -->
 <div class="mb-6 bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-4 sm:p-5 text-white shadow-lg" data-purpose="scarcity-bar">
 <div class="flex flex-col sm:flex-row items-center justify-between gap-2 mb-3 text-center sm:text-left">
 <div class="flex items-center gap-2">
 <span class="text-base leading-none">🔥</span>
-<span class="text-xs sm:text-sm font-bold tracking-tight text-white">Cupos con 85% de descuento:</span>
+<span class="text-xs sm:text-sm font-bold tracking-tight text-white">Cupos con 78% de descuento:</span>
 </div>
 <div class="bg-white/20 border border-white/40 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold tracking-wide text-rose-100">
           ¡Solo quedan 11 de 100 disponibles a este precio!
@@ -835,7 +835,7 @@ fbq('track','PageView');
 <div class="mb-5 p-4 rounded-2xl bg-gray-50 border border-gray-200 text-left space-y-2 text-xs sm:text-sm text-gray-700">
 <div class="text-[10px] uppercase font-bold tracking-widest text-brand-burgundy pb-1 border-b border-gray-200 flex justify-between items-center">
 <span class="">Desglose de valor real</span>
-<span class="text-rose-600 font-bold">Ahorro 85%</span>
+<span class="text-rose-600 font-bold">Ahorro 78%</span>
 </div>
 <div class="flex justify-between items-center">
 <span class="">Pack 460 Plantillas Profesionales Editables:</span>
@@ -856,10 +856,10 @@ fbq('track','PageView');
 <!-- Featured Price -->
 <div class="mb-4">
 <div class="text-4xl sm:text-5xl font-serif font-extrabold text-brand-berry">
-          $22.000 COP
+          $33.500 COP
         </div>
 <div class="mt-2 inline-block bg-rose-50 text-brand-burgundy border border-rose-200 text-[11px] font-bold px-3 py-1 rounded-full">
-          Ahorras un 85% de descuento inmediato (Ahorras $132.000 COP) — Acceso de por vida sin mensualidades
+          Ahorras un 78% de descuento inmediato (Ahorras $120.500 COP) — Acceso de por vida sin mensualidades
         </div>
 </div>
 <!-- Inclusions List -->
@@ -976,7 +976,7 @@ fbq('track','PageView');
           <span class="text-brand-berry font-bold text-xl group-open:rotate-45 transition-transform duration-300">+</span>
 </summary>
 <div class="px-5 pb-5 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-rose-100 pt-3">
-          Es un pago único de $22.000 COP. No hay mensualidades, cobros ocultos ni renovaciones. Las plantillas y los 6 regalos quedan para siempre en tu cuenta de Canva.
+          Es un pago único de $33.500 COP. No hay mensualidades, cobros ocultos ni renovaciones. Las plantillas y los 6 regalos quedan para siempre en tu cuenta de Canva.
         </div>
 </details>
 </div>
@@ -1077,13 +1077,13 @@ fbq('track','PageView');
   if(price&&'IntersectionObserver' in window){
     var io=new IntersectionObserver(function(en){
       if(!sent&&en[0].isIntersecting){sent=true;io.disconnect();
-        fbq('track','ViewContent',{content_name:'Pack 460 Plantillas Belleza',content_type:'product',value:22000,currency:'COP'});}
+        fbq('track','ViewContent',{content_name:'Pack 460 Plantillas Belleza',content_type:'product',value:33500,currency:'COP'});}
     },{threshold:0.3});
     io.observe(price);
   }
   document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function(a){
     a.addEventListener('click',function(){
-      fbq('trackCustom','ClicBotonCompra',{boton:a.textContent.replace(/\s+/g,' ').trim().slice(0,60),value:22000,currency:'COP'});
+      fbq('trackCustom','ClicBotonCompra',{boton:a.textContent.replace(/\s+/g,' ').trim().slice(0,60),value:33500,currency:'COP'});
     });
   });
 })();
